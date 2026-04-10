@@ -1,0 +1,184 @@
+/*FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*VARIÁVEIS*/
+:root{
+
+    /*CORES*/
+    --laranja_movitel: #F26522;
+    --amarelo_ouro: #FFC20E;
+    --branco_puro: #FFFFFF;
+    --cinza_escuro: #333333;
+    --cinza_fundo: #F8F9FA;
+    --cinza_medio: #4A4A4A;
+    --verde_emola: #28A745;
+    --azul_marinho: #003366;
+
+    /*FONTES_TAMANHO*/
+    --tit_princ: 46px;
+    --tit_seccoes: 32px;
+    --tit_cartoes: 24px;
+    --paragrafo: 18px;
+    --links_menu: 15px;
+
+    /*FONTE_FAMÍLIA*/
+    --h1_h2_h3_cta: 'Montserrat';
+    --paragr_footer_tabela: 'Roboto';
+
+    /*FONTE_PESO*/
+    --extra_bold: 800;
+    --bold: 700;
+    --semi-bold: 600;
+    --regular: 400;
+    --medium: 500;
+
+    /*ESPAÇAMENTO_PARAGRAFO*/
+    --esp_paragr: 1.6;
+
+    /*ESPAÇAMENTO_LETRAS*/
+    --esp_letras: -1px;
+
+
+    /*SOMBRAS*/
+    --shadow: 0 4px 20px rgba(0,0,0,0.05);
+
+    /*ARREDONDAMENTO*/
+    --radius_botoes_princ: 12px;
+    --radius_campos_form: 8px;
+
+
+    /*INTERATIVIDADE*/
+    --int_hover: translateY(-2px);
+    
+    /*ACESSIBILIDADE HOVER*/
+    --cor_fundo_hover_1: #FFFFFF;
+    --cor_fundo_hover_2: #F26522;
+}
+
+
+/*
+    CONFIGURAÇÕES GLOBAIS
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+    BODY
+*/
+
+
+
+
+/*
+    HEADER
+*/
+
+/* configuração global de header*/
+header {
+    font-family: var(--h1_h2_h3_cta);
+    padding: 10px;
+}
+
+header.principal {
+
+    /*Configurações gerais*/
+    background-color: var(--laranja_movitel);
+
+
+    /*Configurando flex*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /*configurando a posição*/
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* configuração de links de navegação*/
+header > nav a {
+    font-size: var(--links_menu);
+    text-decoration: none;
+    color: var(--azul_marinho);
+    margin: 0 10px;
+}
+
+/* configuração de botão em link de navegação*/
+nav button  {
+    margin-left: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: var(--laranja_movitel);
+    border: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+nav button:hover{
+    color: var(--branco_puro);
+    background-color: var(--laranja_movitel);
+    transition: .7s;
+    border: 1px solid #FFFFFF;
+}
+
+
+
+/* configuração de hover sobre links de navegação*/
+
+nav a:hover{
+    background-color: var(--branco_puro);
+    color: var(--laranja_movitel);
+    padding: 5px;
+    border-radius: 12px;
+    transform: translateY(-2px);
+    transition: 0.5s;
+}
+
+/*
+    SECTION
+*/
+
+section.apresentacao {
+    /*Configuração geral*/
+    height: 60vh;
+    width: 100%;
+
+    /*configurações Imagem de fundo*/
+    background-image: url(../imgs/fundo_apresentacao.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/* configuração de secção de opções*/
+
+section.opcoes{
+
+    height: 20vh;
+    background-color: var(--cinza_fundo);
+}
+
+/*
+    DIV
+*/
+
+
+
+/*
+    FOOTER
+*/
